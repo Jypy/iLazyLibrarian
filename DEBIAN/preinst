@@ -1,0 +1,25 @@
+#!/bin/sh
+
+folder_app="/Applications/iLazyLibrarian.app/"
+folder_data="/var/mobile/Documents/JypyzProducts/iLazyLibrarian/"
+
+echo
+
+if [ -f ${folder_data}lazylibrarian.db ] ;then
+	echo Data OK
+else
+	mkdir -p $folder_data 
+	
+	if [ -f ${folder_app}lazylibrarian.db ] ;then
+		echo Moving data...
+		mv ${folder_app}cache ${folder_data}
+		mv ${folder_app}Logs ${folder_data}
+		mv ${folder_app}lazylibrarian.db ${folder_data}
+	else
+		echo Fresh install
+	fi
+fi
+
+echo
+echo Pre-flight Done!
+echo

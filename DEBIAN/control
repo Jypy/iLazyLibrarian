@@ -1,0 +1,14 @@
+Package: eu.jypy.ilazylibrarian
+Version: 0.3
+Section: Jypyz.Products.iLAZY
+Priority: standard
+Installed-Size: 
+Maintainer: Jean-Philippe Bouillot (Jypy) <jypyzproducts@jypy.eu>
+Pre-Depends: firmware (>= 3.0)
+Depends: eu.jypy.iconpack, python
+Architecture: iphoneos-arm
+Name: iLazyLibrarian
+Author: Jean-Philippe Bouillot (Jypy) <jypyzproducts@jypy.eu>
+Depiction: http://jypy.eu/products/iLAZY_main.html
+Description: LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs for iDevices
+Sponsor: Jypy.eu <http://jypy.eu>
